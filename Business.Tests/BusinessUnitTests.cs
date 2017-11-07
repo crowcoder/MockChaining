@@ -37,7 +37,7 @@ namespace Business.Tests
 
             //Here we simulate the current price being exactly 15% higher
             //than our last stock trade, and that the trade was a buy.
-            //This should exercise the logic of a buy.
+            //This should exercise the logic of a sell.
             var stockServiceMock = new Mock<IStockService>()
                 .GetCurrentPrice_Mock(simulatedCurrentPrice)
                 .GetLastTrade_Mock(simulatedLastTrade)
